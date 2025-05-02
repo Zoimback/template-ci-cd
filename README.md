@@ -1,2 +1,2 @@
-# template-ci-cd
+# Template-ci-cd
 Plantilla para repositorios con CI/CD
