@@ -1,0 +1,27 @@
+name: nombreproyecto
+language: lenguaajedeprogramacion
+
+image:
+  rebuild: false
+  workdir: config/Dockerfile
+  copy: ./nombreproyecto
+
+test:
+  activate: true
+  command: "comando test"
+
+compilation:
+  activate: true
+  command: "comando compilacion"
+  path: "/usr/src/nombreproyecto/target/release/"
+  file: "archivo/s compilados"
+
+deploy:
+  activate: false
+
+lint:
+  activate: true
+  command: "comando lint"
+
+delete:
+  activate: false
